@@ -1,16 +1,15 @@
 class MathDojo:
     def __init__(self):
-    	self.result = 0
+        self.result = 0
     def add(self, num, *nums):
-    	# tu código aquí
+        for num in nums:
+            self.result += num
+        return self
     def subtract(self, num, *nums):
-    	# tu código aquí
-# crear una instancia:
+        for num in nums:
+            self.result -= num
+        return self
 md = MathDojo()
-# para probar:
+
 x = md.add(2).add(2,5,1).subtract(3,2).result
-print(x)	# debería imprimir 5
-# ejecuta cada uno de los métodos unas cuantas veces más y verifica el resultado
-
-
-
+print(x)	
